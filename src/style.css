@@ -1,0 +1,30 @@
+body {
+  background: #f8f3ff;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  top: 40px;
+}
+input {
+  font-size: 30px;
+}
+#body-box {
+  text-align: center;
+  max-width: 800px;
+  background: white;
+  border-radius: 15px;
+
+  padding: 50px 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  color: rgb(184, 184, 184);
+}
+
+.forcast-weather {
+  display: flex;
+}
