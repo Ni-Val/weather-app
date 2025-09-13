@@ -10,55 +10,34 @@
   </head>
 
   <body>
-    <div id="body-box">
+    <div id="weather-app">
       <header>
         <form action="search">
-          <span>
-            <input
-              type="text"
-              placeholder="Enter a city..."
-              id="search-input-form"
-            />
-            <input type="submit" id="search-input-button" value="Search" />
-          </span>
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            id="search-input-form"
+          />
+          <input type="submit" value="Search" id="search-input-button" />
         </form>
       </header>
 
       <main>
-        <div class="curent-weather">
-          <h1>San Fransisco</h1>
-          <p>
-            Tuesday 13:33, broken clouds
-            <br />
-            Humidity: <strong>83%</strong>, Wind: <strong>5.66km/h</strong>
-          </p>
-        </div>
-        <div class="current-temp">
-          <h1>17°C</h1>
-        </div>
-        <div class="forcast-weather">
-          <ul>
-            <li>Tue</li>
-            <ul>
-              <li><strong>18°</strong> 14°</li>
-            </ul>
-            <li>Wed</li>
-            <ul>
-              <li><strong>18°</strong> 14°</li>
-            </ul>
-            <li>Thu</li>
-            <ul>
-              <li><strong>18°</strong> 14°</li>
-            </ul>
-            <li>Fri</li>
-            <ul>
-              <li><strong>18°</strong> 14°</li>
-            </ul>
-            <li>Sat</li>
-            <ul>
-              <li><strong>18°</strong> 14°</li>
-            </ul>
-          </ul>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">San Fransisco</h1>
+            <p class="weather-app-details">
+              Tuesday 13:33, broken clouds
+              <br />
+              Humidity: <strong>83%</strong>, Wind: <strong>5.66km/h</strong>
+            </p>
+          </div>
+
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-temperature">17</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
       </main>
 
