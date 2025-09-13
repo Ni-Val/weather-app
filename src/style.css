@@ -22,7 +22,7 @@ header {
   border-bottom: 1px solid #f8f3ff;
   padding: 0 0 30px 0;
 }
-#search-input-form {
+.search-input-form {
   background-color: #f8f3ff;
   border-radius: 6px;
   border: none;

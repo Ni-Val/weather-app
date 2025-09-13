@@ -12,20 +12,27 @@
   <body>
     <div id="weather-app">
       <header>
-        <form action="search">
+        <form action="search" class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
+            class="search-input-form"
+            required
             id="search-input-form"
           />
-          <input type="submit" value="Search" id="search-input-button" />
+          <input
+            type="submit"
+            value="Search"
+            class="search-input-button"
+            id="search-input-button"
+          />
         </form>
       </header>
 
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">San Fransisco</h1>
+            <h1 class="weather-app-city" id="city">San Fransisco</h1>
             <p class="weather-app-details">
               Tuesday 13:33, broken clouds
               <br />
@@ -49,5 +56,6 @@
         <a href="https://horizonweathr.netlify.app/">Netlify</a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
